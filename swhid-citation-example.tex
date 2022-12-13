@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage[backend=biber,datamodel=software]{biblatex}
+\usepackage{software-biblatex}
+
+\title{
+  SWHID Citation Example
+}
+
+\author{
+  Marques da Costa, Joenio\\
+  Université Gustave Eiffel
+}
+
+\date{\today}
+
+\addbibresource{swhid-citation-example.bib}
+\ExecuteBibliographyOptions{
+  halid=true,
+  swhid=true,
+  swlabels=true,
+  vcs=true,
+  license=true}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Citing Pandoc \cite{MacFarlane_Pandoc} properly using SWHID
+with the Bib\LaTeX \ Software extension\cite{softwareheritageorg_citing_2020}.
+
+\printbibliography
+
+\end{document}
