@@ -10,12 +10,8 @@ clean:
 	*.ilg *.ind *.out *.lof \
 	*.lot *.bbl *.blg *.gls *.cut *.hd \
 	*.dvi *.ps *.thm *.tgz *.zip *.rpi \
-	*.bcn *.run.xml *.bcf cortext.bib \
+	*.bcn *.run.xml *.bcf \
 	$(RM) -r _minted-*
-
-rm:
-	$(RM) codemeta.json bibtex.bib apalike.apa
-	$(RM) how-to-cite-cortext.pdf
 
 install:
 	curl https://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-software.zip -s -L -o biblatex-software.zip
